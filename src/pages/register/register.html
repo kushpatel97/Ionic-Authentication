@@ -1,0 +1,31 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Sign Up</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-item>
+      <ion-label floating>Full Name</ion-label>
+      <ion-input type="text" [(ngModel)]="FullName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="confirmPassword"></ion-input>
+    </ion-item>
+    
+    <button ion-button block (click)="signUp(email, password, confirmPassword)">Create Account</button>
+    <button ion-button block clear (click)="goToLogin()">Already have an account? Sign In</button>
+  </ion-content>
+  

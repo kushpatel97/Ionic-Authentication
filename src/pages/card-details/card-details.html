@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ item.title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 center> {{ item.status }} </h1>
+    {{ item.desc }}
+    <button ion-button block clear (click)="register(item)">Register</button>
+</ion-content>
